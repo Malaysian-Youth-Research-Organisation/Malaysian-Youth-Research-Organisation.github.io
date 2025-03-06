@@ -1,106 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MYRO - Home</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MYRO Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <nav>
-      <div class="container">
-        <a href="index.html" class="logo">
-          <img src="img/logo.png" alt="MYRO Logo" />
-        </a>
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+
+<body class="font-sans bg-white text-gray-800">
+
+  <header class="sticky top-0 bg-white z-50 container mx-auto px-4 py-6 flex justify-between items-center">
+    <div class="flex items-center">
+      <img src="img/logo.png" alt="MYRO Logo" width="100px">
       </div>
+    </div>
+    <nav class="space-x-4 text-sm font-medium">
+      <a href="#" class="hover:text-gray-600">news</a>
+      <a href="#" class="hover:text-gray-600">mentorship</a>
+      <a href="#" class="hover:text-gray-600">research showcase</a>
+      <a href="#" class="hover:text-gray-600">team</a>
+      <a href="#" class="border border-gray-800 rounded-full px-4 py-2 hover:bg-gray-100">contact us</a>
     </nav>
   </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="container">
-        <h1>Welcome to the Malaysian Youth Research Organisation</h1>
-        <p>Empowering youth through research and innovation</p>
-        <a href="about.html" class="btn">Learn More</a>
+  <main class="container mx-auto px-4 mt-8">
+    <div class="flex items-center justify-between mb-20">
+      <div class="w-1/2">
+        <h1 class="text-4xl font-bold mb-4">Malaysian Youth<br>Research Organisation</h1>
+        <p class="text-lg text-gray-600 mb-8" id="what">Led by youth, driven by youth, empowering<br>the next generation of
+          scientists</p>
       </div>
-    </section>
-
-    <!-- Mission Section -->
-    <section class="mission">
-      <div class="container">
-        <h2>Our Mission</h2>
-        <p>
-          We strive to inspire and empower the next generation by providing a platform for advanced research, 
-          innovative projects, and collaborative learning experiences that fuel creativity and progress.
-        </p>
+      <div class="w-1/2 flex items-center justify-center">
+        <img src="img/logo.png" alt="MYRO Logo" class="h-96 w-96">
       </div>
-    </section>
+    </div>
+    <div class="text-center">
+      <a href="#what"><button class="border border-gray-800 rounded-full px-8 py-3 font-medium hover:bg-gray-100">Know more about
+        us</button></a>
+    </div>
 
-    <!-- Highlights Section -->
-    <section class="highlights">
-      <div class="container">
-        <h2>What We Do</h2>
-        <div class="highlight-items">
-          <div class="item">
-            <img src="img/research1.jpg" alt="Innovative Research" />
-            <h3>Innovative Research</h3>
-            <p>Discover groundbreaking studies and insights driving the future of technology and society.</p>
-          </div>
-          <div class="item">
-            <img src="img/workshop.jpg" alt="Workshops & Events" />
-            <h3>Workshops & Events</h3>
-            <p>Join our interactive workshops and events that foster creativity, skill development, and collaboration.</p>
-          </div>
-          <div class="item">
-            <img src="img/community.jpg" alt="Community Building" />
-            <h3>Community Building</h3>
-            <p>Connect with like-minded youth, mentors, and experts to grow a vibrant research community.</p>
-          </div>
+    <section class="mt-20">
+      <div class="flex items-start">
+        <div class="w-1/2 text-center">
+          <div class="text-6xl font-bold text-gray-400">IMAGE</div>
+          <div class="mt-4 text-sm text-gray-600">Not yet available</div>
+          <div class="mt-8 text-xl italic">"Empowering Youth, Leading Scientific Discovery"</div>
+        </div>
+        <div class="w-1/2">
+          <h2 class="text-4xl font-bold mb-4">What is MYRO?</h2>
+          <p class="text-lg text-gray-600" id="mission">Malaysian Youth Research Organisation, abbreviated as MYRO, is a Malaysian-based,
+            non-profit, and student-led organisation dedicated to bridging the gap in scientific research exposure for
+            Malaysian secondary school students.</p>
         </div>
       </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section class="gallery">
-      <div class="container">
-        <h2>Gallery</h2>
-        <div class="gallery-items">
-          <img src="img/gallery1.jpg" alt="Event Image 1" />
-          <img src="img/gallery2.jpg" alt="Event Image 2" />
-          <img src="img/gallery3.jpg" alt="Event Image 3" />
-        </div>
+      <div class="text-center mt-12">
+        <a href="#mission">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+        </a>
       </div>
     </section>
 
-    <!-- Latest News Section -->
-    <section class="news">
-      <div class="container">
-        <h2>Latest News</h2>
-        <article class="news-item">
-          <img src="img/news1.jpg" alt="Annual Research Conference 2023" />
-          <h3>Annual Research Conference 2023</h3>
-          <p>
-            Discover the highlights and breakthroughs from our recent conference where experts shared innovative ideas 
-            to drive youth research forward.
-          </p>
-          <a href="news.html" class="btn">Read More</a>
-        </article>
+    <section class="mt-20">
+      <div class="text-center">
+        <h2 class="text-4xl font-bold mb-8">Our Mission</h2>
+        <p class="text-lg text-gray-600 mb-8">MYRO aims to address the gap in scientific research exposure among Malaysian
+          secondary school students by providing various programs and research opportunities, particularly for
+          underprivileged students.</p>
+      </div>
+      <div class="flex justify-around">
+        <div class="border border-gray-400 rounded-2xl p-8 w-1/4 text-center">
+          <h3 class="text-xl font-semibold mb-4">Research & Learning</h3>
+          <p class="text-lg text-gray-600">We provide access to research opportunities, and workshops, enabling students to
+            explore their scientific curiosity beyond their typical textbook knowledge.</p>
+        </div>
+        <div class="border border-gray-400 rounded-2xl p-8 w-1/4 text-center">
+          <h3 class="text-xl font-semibold mb-4">Mentorship</h3>
+          <p class="text-lg text-gray-600">Guiding students through research with expert mentors from various scientific
+            fields.</p>
+        </div>
+        <div class="border border-gray-400 rounded-2xl p-8 w-1/4 text-center">
+          <h3 class="text-xl font-semibold mb-4">Annual Symposium</h3>
+          <p class="text-lg text-gray-600">An annual platform for young researchers to present their findings, network with
+            professionals, and gain insights from experts in various scientific fields.</p>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 Malaysian Youth Research Organisation. All rights reserved.</p>
+  <footer class="bg-gray-100 py-8">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="img/logo.png" alt="MYRO Logo" class="w-12 h-12 mr-2">
+        <a href="mailto:myro@gmail.com" class="ml-4 text-sm text-gray-600">Email us</a>
+      </div>
+      <div class="flex space-x-8">
+        <div>
+          <a href="#" class="block text-sm text-gray-600 hover:text-gray-800">news</a>
+          <a href="#" class="block text-sm text-gray-600 hover:text-gray-800">mentorship</a>
+          <a href="#" class="block text-sm text-gray-600 hover:text-gray-800">research showcase</a>
+          <a href="#" class="block text-sm text-gray-600 hover:text-gray-800">team</a>
+          <a href="#" class="block text-sm text-gray-600 hover:text-gray-800">contact us</a>
+        </div>
+        <div>
+          <a href="#" class="block text-sm text-gray-600 hover:text-gray-800">Insta</a>
+          <a href="#" class="block text-sm text-gray-600 hover:text-gray-800">LinkedIn</a>
+          <a href="#" class="block text-sm text-gray-600 hover:text-gray-800">Facebook</a>
+        </div>
+      </div>
     </div>
   </footer>
 </body>
+
 </html>
